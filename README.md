@@ -1,5 +1,5 @@
 
-##Custom Terminal on Windows (Using the new Windows Terminal)
+## Custom Terminal on Windows (Using the new Windows Terminal)
 
 I'm pretty sure I starter reading this `https://www.hanselman.com/blog/ANewConsoleForWindowsItsTheOpenSourceWindowsTerminal.aspx`
 
@@ -14,7 +14,7 @@ Then install FiraCode `https://github.com/tonsky/FiraCode/wiki`
 Install PIP for 
     `sudo apt install python-pip`
 
-###Install Powerline-Shell
+### Install Powerline-Shell
 * Following instructions given @ `https://github.com/b-ryan/powerline-shell?WT.mc_id=-blog-scottha#setup`
 
     `pip install powerline-shell`
@@ -50,6 +50,6 @@ settings.json on vscode
 
 The file `config.json` is to be copied to `~/.config/poweline-shell/config.json` as part of poweline-shell's configuration.
 
-###ToDo:
+### ToDo:
 
 Make Win32 PATH accessible from WSL (Seems to be a way here `https://devblogs.microsoft.com/commandline/share-environment-vars-between-wsl-and-windows/`)
