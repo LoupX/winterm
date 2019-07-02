@@ -1,29 +1,25 @@
 {
   "segments": [
-    "virtual_env",
+    "fossil",
     "username",
-    "hostname",
     "ssh",
     "cwd",
     "git",
+    "git_stash",
     "hg",
     "jobs",
     "root",
     "set_term_title",
-    "newline",
-    "root"
+    "bzr"
   ],
-  "mode": "flat",
+  "mode": "patched",
   "cwd": {
-  	"mode":"plain",
-	"max_depth":4,
-	"colorize": true
-  	},
+    "mode": "dironly",
+    "max_depth": 4,
+    "colorize": true
+  },
   "vcs": {
-	"show_symbol": true
-	},
-  "theme":"washed",
-  "time":{
-	"format": " %H:%M "
-	}
+    "show_symbol": true
+  },
+  "theme": "/mnt/e/dev/winterm/loupx-theme.py"
 }
