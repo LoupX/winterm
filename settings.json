@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Cobalt2",
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "editor.fontFamily": "'Fira Code Medium', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true
+}
