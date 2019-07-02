@@ -8,7 +8,7 @@ class Color(DefaultColor):
     HOSTNAME_FG = 15
     HOSTNAME_BG = 10
 
-    HOME_SPECIAL_DISPLAY = False
+    HOME_SPECIAL_DISPLAY = True
     PATH_FG = 10
     PATH_BG = 7
     CWD_FG = 0
