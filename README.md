@@ -9,8 +9,10 @@ At some point I was reading [this](https://gist.github.com/shanselman/221ef38d03
 - On Windows, install [chocolate](https://chocolatey.org) (package manager)
 
 - Then [install FiraCode](https://github.com/tonsky/FiraCode/wiki)
+
+    => Once installed chocolatey, on a PowerShell with Admin priviledges run `choco install firacode`
     => This is to install it for Windows Terminals, for WSL:
-    `sudo apt update & apt upgrade`
+    `sudo apt update | sudo apt upgrade`
     `sudo apt install fonts-firacode`
 
 Install PIP for python packages
@@ -24,21 +26,24 @@ Install PIP for python packages
 
 -Add the following to the `.bashrc` profile (@ ~/):
 
-    ```Bash
-    #Add the following to your .bashrc file:
+```Bash
+#Add the following to your .bashrc file:
 
-    function _update_ps1() {
-        PS1=$(powerline-shell $?)
-    }
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
 
-    if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; 
-    then
-        PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-    fi
-    ```
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; 
+then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+```
 
-The file [config.json](config.json) is to be copied to `~/.config/poweline-shell/config.json` as part of poweline-shell's configuration.
+The file [config.json](config.json) is to be copied to `~/.config/powerline-shell` as part of poweline-shell's configuration.
 The configuration file is explained at b-ryans' project (link above, DUH !)
+
+## Windows terminal manager (?)
+To actually have more than one terminal setting on the new Window's terminal it is needed to make some adjustments on its settings. Mine are on [the profile](profile.json) file. I added some keybindings since the default file doesn't have any and coming from Fish it feels strange to not have `ctrl + t`
 
 ## VSCode Settings
 
