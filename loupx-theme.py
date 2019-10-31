@@ -38,3 +38,4 @@ class Color(DefaultColor):
 
     TIME_FG = 15
     TIME_BG = 10
+    
